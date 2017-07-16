@@ -20,7 +20,7 @@ if (! function_exists('spacious_custom_credits')) {
 	
 	add_filter('spacious_footer_copyright', 'spacious_custom_credits',10);
 	function spacious_custom_credits(){
-		$credit_value = '<div class="copyright">Copyright &copy; ' . date('Y') . ' <a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" ><span>' . get_bloginfo( 'name', 'display' ) . '.</span></a> ' .get_option('spacious_custom_credits'). '<div>';
+		$credit_value = '<div class="copyright">Copyright &copy; ' . date('Y') . ' <a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" ><span>' . get_bloginfo( 'name', 'display' ) . '.</span></a> ' .get_option('spacious_custom_credits'). '</div>';
 		echo $credit_value;
 	}
 	
